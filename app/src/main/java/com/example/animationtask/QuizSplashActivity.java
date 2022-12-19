@@ -30,7 +30,9 @@ public class QuizSplashActivity extends AppCompatActivity {
             row.setLayoutAnimation(controller);
         }
 
+        TextView logo2 = findViewById(R.id.TextViewBottomTitle);
         Animation fade2 = AnimationUtils.loadAnimation(this, R.anim.fade_in2);
+        logo2.startAnimation(fade2);
         fade2.setAnimationListener(new Animation.AnimationListener() {
             @Override
             public void onAnimationStart(Animation animation) {
